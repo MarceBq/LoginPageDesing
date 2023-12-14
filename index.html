@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="main-form">
+        <header class="header-form">
+            <img src="/external-items/contact-form-icon.svg" alt="">
+        </header>
+
+        <section class="section-container">
+            <section class="section-form-description">
+                <h1>Interested in our <br> business pricing?</h1>
+                <p>Fill out the from to view details ans we'll <br> contact you as soon as posible</p>
+            </section>
+
+            <section class="section-form-container"> 
+                <form 
+                class="form-container"
+                action="login-process-form" method="post">
+                    <div class="box-label-container">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="  Ethan Johnson" required>
+                    </div>
+                    
+                    <div class="box-label-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="  ethan@johnson.com" required>
+                    </div>
+                    
+                    <div class="box-label-container">
+                        <label for="size">Company Size</label>
+                        
+                        <select name="size" id="size">
+                            <option value="">50-100 employess</option>
+                            <option value="">101-150 employess</option>
+                            <option value="">151-200 employess</option>
+                        </select>
+                    </div>
+                    
+                    <div class="box-label-container">
+                        <label for="subject">Subject</label>
+                        <!-- <input class="expand-label" type="""text" id="subject" name="subject" placeholder="  Building landing page"></input required> -->
+
+                        <select name="subject" id="subject">
+                            <option value="">50-100 employess</option>
+                            <option value="">101-150 employess</option>
+                            <option value="">151-200 employess</option>
+                        </select>
+                    </div>
+                    
+                    <div class="message-button-container">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" cols="22" placeholder="  50-100 employees"></textarea>
+                        <button type="submit"><strong>Contact Sales</strong></button>
+                    </div>
+                </form>
+            </article>
+            
+        </section>
+    </main>
+</body>
+</html>

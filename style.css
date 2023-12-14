@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Montserrat:wght@100&family=PT+Sans&family=Pacifico&family=Poppins:wght@100&family=Rubik:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    /* no se repiten las imagenes de fondo*/
+    background-image: url("./external-items/bg-image.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* Section containert */
+.section-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section description */
+.section-form-description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-form-description h1{
+    font-size: 4rem;
+    color:white; 
+    text-align: center;
+}
+
+.section-form-description p{
+    font-size: 2rem;
+    color:white; 
+    text-align: center;
+}
+
+/* section form container */
+.section-form-container{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;    
+    padding: 20px;
+    margin: 20px;
+}
+
+/* formulary */
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Selected all div's */
+.form-container .box-label-container{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+
+    /* margin: top right bottom left; */
+    margin: 10px 0px 5px 0px;
+}
+
+.box-label-container select{
+  appearance: none;
+  background-image: url("./external-items/Expand_down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+/* Selected all labels */
+.form-container label{
+    font-size: 0.875rem;
+    color:white; 
+}
+
+/* Add select */
+.form-container input, select{
+    border: none;
+    border-radius: 15px;
+    min-height: 3.5rem;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+/* Selected button-message container */
+.message-button-container{
+    margin-top: 10px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+textarea{
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 15px;
+    min-height: 7rem;
+    margin-top: 4px;
+    padding: 6px;
+}
+
+/* Button */
+button{
+    margin-top: 15px;
+    color: #4036A9;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    min-height: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+select{
+    padding: 9px;
+}
+
+option{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1024px){
+    /* Section container */
+    .section-container{
+        width: 100%;
+    }
+
+    .section-form-description{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .section-form-description h1{
+        padding-bottom: 10px;
+        font-size: 3rem;
+    }
+    
+    .section-form-description p{
+        font-size: 1.25rem;
+    }
+
+    .section-form-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:640px){
+    
+    body{
+        width: 100vw;
+        height: 125vh;
+    }
+    
+    .section-form-description{
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .form-container .box-label-container{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    
+        /* margin: top right bottom left; */
+        margin: 10px 0px 5px 0px;
+    }
+
+    .message-button-container{
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+}
